@@ -1,6 +1,6 @@
 class Integer
-  pingponged = []
   define_method(:ping_pong) do
+    pingponged = []
     for num in 1..self
       if num.%(15).eql?(0)
         pingponged.push('ping pong')
